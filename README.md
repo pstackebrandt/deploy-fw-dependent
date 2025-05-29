@@ -25,12 +25,37 @@ See [Microsoft Learn documentation](https://learn.microsoft.com/en-us/training/m
    dotnet publish -c Release -o publish-fd   
    ```
 
+4. **Publish (self-contained):**
+Run this in the root directory of specific project folder.
+
+   ```powershell
+   dotnet publish -c Release -r win-x64 -o publish-scd-win64 --self-contained
+   ```
+
+## Command Explanation
+
+In the previous command:
+
+- **`-c Release`** - Specifies that the app should be built in release mode. This optimizes the app for performance.
+- **`-r win-x64`** - Specifies that the app should be published for 64-bit Windows. `win-x64` is the runtime identifier (RID) for 64-bit Windows, so the app is published as a self-contained deployment for 64-bit Windows.
+- **`-o publish-scd-win64`** - Specifies the output directory for the published app.
+- **`--self-contained`** - Specifies that the app should be published as a self-contained deployment.
+
+This command builds and publishes the app as a self-contained deployment for 64-bit Windows to the `MyWebApp/publish-scd-win64` directory.
+
 ## What's Framework-Dependent Deployment?
 
 - Requires .NET runtime to be installed on the target machine
 - Smaller deployment size
 - Automatic security updates through runtime updates
 - Cross-platform compatible
+
+## What's Self-Contained Deployment?
+
+- Includes the .NET runtime with your application
+- Larger deployment size but no runtime dependencies
+- Target machine doesn't need .NET installed
+- Platform-specific (e.g., win-x64, linux-x64, osx-x64)
 
 ## Project Info
 

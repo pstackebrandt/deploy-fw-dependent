@@ -32,6 +32,13 @@ Run this in the root directory of specific project folder.
    dotnet publish -c Release -r win-x64 -o publish-scd-win64 --self-contained
    ```
 
+5. **Publish (self-contained for Linux):**
+Run this in the root directory of specific project folder.
+
+   ```powershell
+   dotnet publish -c Release -r linux-x64 -o publish-scd-linux64 --self-contained
+   ```
+
 ## Command Explanation
 
 We get a folder with ca. 100 MB size.
@@ -44,6 +51,13 @@ In the previous command:
 - **`--self-contained`** - Specifies that the app should be published as a self-contained deployment.
 
 This command builds and publishes the app as a self-contained deployment for 64-bit Windows to the `MyWebApp/publish-scd-win64` directory.
+
+For the Linux self-contained deployment command:
+
+- **`-r linux-x64`** - Specifies that the app should be published for 64-bit Linux.
+- **`-o publish-scd-linux64`** - Specifies the output directory for the published app.
+
+This command builds and publishes the app as a self-contained deployment for 64-bit Linux to the `MyWebApp/publish-scd-linux64` directory.
 
 ## What's Framework-Dependent Deployment?
 
@@ -63,4 +77,4 @@ This command builds and publishes the app as a self-contained deployment for 64-
 
 - **Framework:** .NET 9.0
 - **Type:** ASP.NET Core Web Application
-- **Default URL:** https://localhost:5001
+- **Default URL:** [https://localhost:5001](https://localhost:5001)

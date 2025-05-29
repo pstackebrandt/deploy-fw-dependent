@@ -34,6 +34,8 @@ Run this in the root directory of specific project folder.
 
 ## Command Explanation
 
+We get a folder with ca. 100 MB size.
+
 In the previous command:
 
 - **`-c Release`** - Specifies that the app should be built in release mode. This optimizes the app for performance.

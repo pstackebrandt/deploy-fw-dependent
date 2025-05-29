@@ -6,6 +6,9 @@ x86/
 [Bb]in/
 [Oo]bj/
 
+# Publish folders
+**/publish*/
+
 # Visual Studio / Visual Studio Code
 .vs/
 .vscode/

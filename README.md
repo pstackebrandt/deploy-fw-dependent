@@ -1,8 +1,7 @@
 # MyWebApp
 
 A simple ASP.NET Core web application used to learn framework-dependent deployment.
-See [Exercise - Publish for framework-dependent deployment - Training | Microsoft Learn
-](https://learn.microsoft.com/en-us/training/modules/publish-aspnetcore-app/3-exercise-framework-dependent) for more details.
+See [Exercise - Publish for framework-dependent deployment - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/publish-aspnetcore-app/3-exercise-framework-dependent) for more details.
 
 ## Quick Start
 
@@ -19,9 +18,11 @@ See [Exercise - Publish for framework-dependent deployment - Training | Microsof
    ```
 
 3. **Publish (framework-dependent):**
+Run this in the root directory of specific project folder.
+See [Microsoft Learn documentation](https://learn.microsoft.com/en-us/training/modules/publish-aspnetcore-app/3-exercise-framework-dependent)
 
    ```powershell
-   dotnet publish MyWebApp -c Release -o ./publish
+   dotnet publish -c Release -o publish-fd   
    ```
 
 ## What's Framework-Dependent Deployment?

@@ -59,6 +59,8 @@ For the Linux self-contained deployment command:
 
 This command builds and publishes the app as a self-contained deployment for 64-bit Linux to the `MyWebApp/publish-scd-linux64` directory.
 
+The list of files in the publish-scd-linux64 directory is similar to the list of files in the publish-scd-win64 directory, but the executable file is named MyWebApp instead of MyWebApp.exe. This is because Linux doesn't use file extensions to determine file types. After you deploy the app to a Linux server, you'll need to grant execute permission to the MyWebApp file with the chmod +x command before it can run.
+
 ## What's Framework-Dependent Deployment?
 
 - Requires .NET runtime to be installed on the target machine

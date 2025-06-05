@@ -1,6 +1,6 @@
 # MyWebApp
 
-A simple ASP.NET Core web application used to learn framework-dependent deployment.
+A simple ASP.NET Core web application used to learn asp.net deployment.
 See [Exercise - Publish for framework-dependent deployment - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/publish-aspnetcore-app/3-exercise-framework-dependent) for more details.
 
 ## Quick Start
